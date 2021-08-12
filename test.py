@@ -16,18 +16,17 @@ pregunta="Funciona?"
 
 def start(update: Update, context: CallbackContext) -> None:
     """Sends a message with three inline buttons attached."""
-    for majorkey, subdict in datos.items():
-        for subkey, value in subdict.items():
+    update.message.reply_text('Bienvenido al bot de la UTN, sobre que tematica estas buscando info?')
+    opts = []
+    for key, values in datos.items():
             keyboard= [
-                    [InlineKeyboardButton("({})".format(subkey),callback_data='uwu'  )
+                    [InlineKeyboardButton("({}) 👍".format(key),callback_data='uwu'  )
 
                 ]]
-    
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            update.message.reply_text("",reply_markup=reply_markup)
 
-    reply_markup = InlineKeyboardMarkup(keyboard)
-
-    update.message.reply_text('Bienvenido al bot de la UTN, sobre que tematica estas buscando info?', reply_markup=reply_markup)
-
+    print(opts)
 
 def button(update: Update, context: CallbackContext) -> None:
     """Parses the CallbackQuery and updates the message text."""
