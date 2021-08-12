@@ -1,5 +1,5 @@
-{"Secciones":[
-    {"Becas":{
+{
+    "Becas":{
         "Pregunta1": "Respuesta",
         "Pregunta2": "Respuesta2",
         "Pregunta3": "Respuesta3"
@@ -16,5 +16,4 @@
 
     }
     
-    }
-]}
+}

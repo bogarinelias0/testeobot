@@ -16,13 +16,12 @@ pregunta="Funciona?"
 
 def start(update: Update, context: CallbackContext) -> None:
     """Sends a message with three inline buttons attached."""
-    for key in datos:
-        value=datos[key]
-        for value in datos:
+    for majorkey, subdict in datos.items():
+        for subkey, value in subdict.items():
             keyboard= [
-                [InlineKeyboardButton("({})".format(value),callback_data='uwu'  )
+                    [InlineKeyboardButton("({})".format(subkey),callback_data='uwu'  )
 
-            ]]
+                ]]
     
 
     reply_markup = InlineKeyboardMarkup(keyboard)
