@@ -1,0 +1,20 @@
+{"Secciones":[
+    {"Becas":{
+        "Pregunta1": "Respuesta",
+        "Pregunta2": "Respuesta2",
+        "Pregunta3": "Respuesta3"
+    },"Seccion2":{
+        "Pregunta1" : "Respuesta1",
+        "Pregunta2" : "Respuesta2",
+        "Pregunta3" : "Respuesta3",
+        "Pregunta4" : "Respuesta4"
+    },
+    "Seccion3":{
+        "Pregunta1": "Respuesta1",
+        "Pregunta2": "Respuesta2",
+        "Pregunta3": "Respuesta3"
+
+    }
+    
+    }
+]}
